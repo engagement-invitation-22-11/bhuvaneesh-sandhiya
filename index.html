@@ -269,7 +269,7 @@ html.sealed,html.sealed body{overflow:hidden;height:100%}
 .seal-btn i{font-size:20px;color:var(--gold);margin:0 4px}
 .seal-btn:focus-visible{outline:3px solid #fff}
 /* rotating mandala ring behind seal */
-.seal-ring{position:absolute;inset:-24px;border-radius:50%;animation:spin 30s linear infinite;pointer-events:none}
+.seal-ring{position:absolute;inset:-20px;border-radius:50%;animation:spin 30s linear infinite;pointer-events:none;width:calc(100% + 40px);height:calc(100% + 40px)}
 @keyframes pulse{
  0%,100%{box-shadow:0 0 0 3px var(--gold3),0 0 0 6px #1a0838,0 0 0 8px var(--gold),0 0 0 12px #1a0838,0 0 0 13.5px var(--gold3),0 20px 60px #000c,0 0 0 0 #d4a84300}
  50%{box-shadow:0 0 0 3px var(--gold3),0 0 0 6px #1a0838,0 0 0 8px var(--gold),0 0 0 12px #1a0838,0 0 0 13.5px var(--gold3),0 20px 60px #000c,0 0 0 26px #d4a84300}}
@@ -564,6 +564,12 @@ html.sealed .stage{opacity:0;transform:translateY(20px)}
  .postcard{flex-direction:column;gap:16px}.postcard-stamp{width:60px;height:72px}
  .timebox{min-width:66px}.timebox b{font-size:26px}
  .hero-card{padding:0 18px 64px}
+}
+@media(max-width:540px){
+ .seal-btn{width:120px;height:120px}
+ .seal-btn span{font-size:28px}
+ .seal-top{font-size:11px;letter-spacing:.25em}
+ .seal-hint{font-size:8px;letter-spacing:.25em}
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
 </style>
